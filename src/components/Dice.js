@@ -69,8 +69,8 @@ const Dice = React.memo(({color, rotate, player, data}) => {
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
   const handleDicePress = async () => {
-    const newDiceNo = 2;
-    // const newDiceNo = Math.floor(Math.random() * 6) + 1;
+    // const newDiceNo = 2;
+    const newDiceNo = Math.floor(Math.random() * 6) + 1;
 
     playSound('dice_roll');
     setDiceRolling(true);
